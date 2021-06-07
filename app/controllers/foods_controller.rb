@@ -17,12 +17,19 @@ class FoodsController < ApplicationController
   end
 
   def edit
+    @food = Food.find(params[:id])
   end
 
   def update
+    food = Food.find(params[:id])
+    food.update!(food_params)
+    redirect_to food
   end
 
   def destroy
+    food = Food.find(params[:id])
+    food.destroy!
+    redirect_to foods_path
   end
 
   private
