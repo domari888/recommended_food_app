@@ -1,4 +1,4 @@
 class Food < ApplicationRecord
   belongs_to :user
-  varidates :name, presence: true
+  validates :name, presence: true
 end
