@@ -12,6 +12,7 @@ class FoodsController < ApplicationController
   end
 
   def show
+    @food = current_user.foods.find(params[:id])
   end
 
   def edit
