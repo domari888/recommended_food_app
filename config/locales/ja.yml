@@ -4,6 +4,7 @@ ja:
       food: 料理
     attributes:
       food:
+        user: ユーザー
         name: 料理名
         comment: コメント
   helpers:

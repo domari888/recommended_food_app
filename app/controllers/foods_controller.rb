@@ -14,11 +14,9 @@ class FoodsController < ApplicationController
     redirect_to food
   end
 
-  def show
-  end
+  def show; end
 
-  def edit
-  end
+  def edit; end
 
   def update
     @food.update!(food_params)
@@ -39,5 +37,4 @@ class FoodsController < ApplicationController
   def food_params
     params.require(:food).permit(:name, :comment)
   end
-
 end
