@@ -1,5 +1,6 @@
 class FoodsController < ApplicationController
   def index
+    @foods = Food.order(id: :asc)
   end
 
   def new
@@ -12,7 +13,7 @@ class FoodsController < ApplicationController
   end
 
   def show
-    @food = current_user.foods.find(params[:id])
+    @food = Food.find(params[:id])
   end
 
   def edit
