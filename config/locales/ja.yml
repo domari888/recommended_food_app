@@ -7,6 +7,9 @@ ja:
         user: ユーザー
         name: 料理名
         comment: コメント
+      like:
+        user: ユーザー
+        food: 料理
   helpers:
     submit:
       submit: 送信
