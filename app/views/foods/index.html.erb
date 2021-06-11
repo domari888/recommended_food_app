@@ -2,6 +2,11 @@
 <% @foods.each do |food| %>
   <p>【メールアドレス】<%= food.user.email %></p>
   <p>【料理名】<%= food.name %></p>
+  <% if food.liked_by?(current_user) %>
+    <%= link_to "★", food_likes_path(food), method: :delete %>
+  <% else %>
+    <%= link_to "☆", food_likes_path(food), method: :post %>
+  <% end %>
   <%= link_to "詳細", food %>
   <% if current_user.id == food.user_id %>
     <%= link_to "編集", edit_food_path(food) %>
