@@ -1,24 +1,24 @@
-# README
+# おすすめ料理　投稿アプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 開発環境
+- mac bigsur
+- Ruby 2.7.2
+- Rails 6.0.3.6
+- postgreSQL 13.2
 
-Things you may want to cover:
+## 機能一覧
+- ユーザー関連機能(devise)
+  - 新規登録、編集、削除
+  - ログイン、ログアウト
+  
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- 新規投稿機能
+  - 料理名投稿機能
+  - コメント機能
+  - 画像投稿機能
+  - いいね機能
+  
+- 投稿画面
+  - 料理名、コメント表示
+  - 投稿画像表示(詳細ページ)
+  - いいね機能
